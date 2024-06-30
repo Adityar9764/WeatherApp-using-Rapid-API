@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="weather.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <img class="siteicon" src="./DepImages/siteicon.png" alt="">
+        WeatherApp
+      </div>
+      <ul class="navbar-links">
+        <li><a href="#" class="navbar-link">Home</a></li>
+        <li><a href="#" class="navbar-link">Weather Forecast</a></li>
+        <li><a href="#" class="navbar-link">About Us</a></li>
+        <li><a href="#" class="navbar-link">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="open">
+      <pre><h2>Step into a world where every forecast is an adventure – 
+Welcome to the weather wonderscape, where every cloud has a silver lining and every breeze carries tales from the skies.</h2></pre>
+    </div>
+
+    <div class="container">
+
+      <div class="weather-card" id="cityweathercard1">
+
+            <div class="cardimg">
+              <img src="./DepImages/mainicon.png" alt="Icon">
+            </div>
+          
+            <div class="cardopener">
+            Enter the city name to get details
+            </div>
+            
+            <div class="searchcity">
+              <p>City:-</p>
+              <input class="cityinputdesign" type="text" name="Enter City" id="cityin">
+              <button id="submit" class="submitbtndesign">Search</button>
+            </div>
+          
+          <div class="weather-details">
+            <ul class="list">
+              <pre>
+              <li>Temp : <span id="temp"></span></li>
+              <li>Humidity : <span id="humidity"></span></li>
+              <li>winddegrees : <span id="wind_degrees"></span></li>
+              <li>wind-speed : <span id="wind_speed"></span></li>
+              </pre>
+            </ul>
+          </div>
+        
+      </div>
+    
+
+      <div class="weather-card" id="cityweathercard2">
+        <div class="card2head">
+        <h5 id="cityin">City name</h5>
+        </div>
+        <div class="weather-details">
+          <ul class="list">
+            <pre>
+            <li>Max-temp : <span id="max_temp"></span></li>
+            <li>Min-temp : <span id="min_temp"></span></li>
+            <li>Cloud-pct : <span id="Cloud_pct"></span></li>
+            <li>feels-like : <span id="feels_like"></span></li>
+            <li>Sunrise : <span id="sunrise"></span></li>
+            <li>Sunset : <span id="sunset"></span></li>
+            </pre>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./DepImages/Daily forecast.jpg" class="card-img" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Daily Forecast</h5>
+          <p class="card-text">
+        
+          </p>
+          <a href="#" class="btn btn-primary">View daily forecast</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./DepImages/Seasonal.jpg" class="card-img" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Seasonal forecast</h5>
+          <p class="card-text">
+        
+          </p>
+          <a href="#" class="btn btn-primary">View seasonal forecast</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./DepImages/Worldweather.jpg" class="card-img" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">World-wide weather map</h5>
+          <p class="card-text">
+        
+          </p>
+          <a href="#" class="btn btn-primary">Browse world weather</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./DepImages/Cityweather.jpg" class="card-img" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Your city's weather</h5>
+          <p class="card-text">
+        
+          </p>
+          <a href="#" class="btn btn-primary">Specific city</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./DepImages/top.jpg" class="card-img" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Top stories</h5>
+          <p class="card-text">
+        
+          </p>
+          <a href="#" class="btn btn-primary">Top weather stories</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./DepImages/Air quality.jpg" class="card-img" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Air Quality</h5>
+          <p class="card-text">
+        
+          </p>
+          <a href="#" class="btn btn-primary">AQI</a>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="weathermap-section">
+      <div class="map-container">
+        <h4>World Radar</h4>
+        <img src="./DepImages/worldmap.jpg" alt="World Weather Map" class="world-map">
+      </div>
+    
+      <div class="shortcuts-container">
+        <div class="shortcut-item">
+          <img src="./DepImages/localshortcut.png"  class="shortcut-icon">
+          <p class="shortcut-label">Local Forecast</p>
+        </div>
+    
+        <div class="shortcut-item">
+          <img src="./DepImages/weeklyoutlook.jpg"  class="shortcut-icon">
+          <p class="shortcut-label">Weekly Outlook</p>
+        </div>
+    
+        <div class="shortcut-item">
+          <img src="./DepImages/alerts.jpg"  class="shortcut-icon">
+          <p class="shortcut-label">Weather Alerts</p>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="content">
+      <div class="footer-heading">
+        <h4>Quick weather report of famous cities</h4>
+      </div>
+
+      <footer>
+        <table class="footer-table">
+          <tr>
+            <td></td>
+            <td>Cloud_pct</td>
+            <td>Feels_like</td>
+            <td>Humidity</td>
+            <td>Max_temp</td>
+            <td>Min_temp</td>
+            <td>Sunrise</td>
+            <td>Sunset</td>
+            <td>Temp</td>
+            <td>Wind_degrees</td>
+            <td>Wind_speed</td>
+          </tr>
+          <tr>
+            <td>Newyork</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Tokyo</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Paris</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>London</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Mumbai</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Las Vegas</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </footer>
+    </div>
+
+    <script src="weatherlogic.js"></script>
+  </body>
+</html>
